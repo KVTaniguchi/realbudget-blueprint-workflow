@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BD32378B2604FE9A00F2AC53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32378A2604FE9A00F2AC53 /* AppDelegate.swift */; };
-		BD32378D2604FE9A00F2AC53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32378C2604FE9A00F2AC53 /* SceneDelegate.swift */; };
-		BD32378F2604FE9A00F2AC53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32378E2604FE9A00F2AC53 /* ViewController.swift */; };
-		BD3237922604FE9A00F2AC53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3237902604FE9A00F2AC53 /* Main.storyboard */; };
+		BD32378F2604FE9A00F2AC53 /* CurrentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32378E2604FE9A00F2AC53 /* CurrentStateViewController.swift */; };
 		BD3237942604FE9C00F2AC53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3237932604FE9C00F2AC53 /* Assets.xcassets */; };
 		BD3237972604FE9C00F2AC53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3237952604FE9C00F2AC53 /* LaunchScreen.storyboard */; };
 		BD3237A22604FE9C00F2AC53 /* RealBudget___BluePrint___WorkflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3237A12604FE9C00F2AC53 /* RealBudget___BluePrint___WorkflowTests.swift */; };
 		BD3237AD2604FE9C00F2AC53 /* RealBudget___BluePrint___WorkflowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3237AC2604FE9C00F2AC53 /* RealBudget___BluePrint___WorkflowUITests.swift */; };
+		BD3237C526051E4000F2AC53 /* WorkflowUI in Frameworks */ = {isa = PBXBuildFile; productRef = BD3237C426051E4000F2AC53 /* WorkflowUI */; };
+		BD3237C726051E4000F2AC53 /* Workflow in Frameworks */ = {isa = PBXBuildFile; productRef = BD3237C626051E4000F2AC53 /* Workflow */; };
+		BD3237CD26051E9700F2AC53 /* BlueprintUICommonControls in Frameworks */ = {isa = PBXBuildFile; productRef = BD3237CC26051E9700F2AC53 /* BlueprintUICommonControls */; };
+		BD3237CF26051E9700F2AC53 /* BlueprintUI in Frameworks */ = {isa = PBXBuildFile; productRef = BD3237CE26051E9700F2AC53 /* BlueprintUI */; };
+		BD3237D72605327F00F2AC53 /* FinancialResourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3237D62605327F00F2AC53 /* FinancialResourse.swift */; };
+		BD3237DD260532C200F2AC53 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3237DC260532C200F2AC53 /* Forecast.swift */; };
+		BD3237E2260533C000F2AC53 /* PredictionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3237E1260533C000F2AC53 /* PredictionEngine.swift */; };
+		BD3237E7260533E000F2AC53 /* FinancialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3237E6260533E000F2AC53 /* FinancialState.swift */; };
+		BD3237EC260533FB00F2AC53 /* FinancialEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3237EB260533FB00F2AC53 /* FinancialEvent.swift */; };
+		BD3237F12605342200F2AC53 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3237F02605342200F2AC53 /* Frequency.swift */; };
+		BD3237F72605391700F2AC53 /* FinancialState.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD3237F52605391700F2AC53 /* FinancialState.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +46,7 @@
 /* Begin PBXFileReference section */
 		BD3237872604FE9A00F2AC53 /* RealBudget - BluePrint & Workflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RealBudget - BluePrint & Workflow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD32378A2604FE9A00F2AC53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD32378C2604FE9A00F2AC53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD32378E2604FE9A00F2AC53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BD3237912604FE9A00F2AC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD32378E2604FE9A00F2AC53 /* CurrentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateViewController.swift; sourceTree = "<group>"; };
 		BD3237932604FE9C00F2AC53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD3237962604FE9C00F2AC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD3237982604FE9C00F2AC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,13 @@
 		BD3237A82604FE9C00F2AC53 /* RealBudget - BluePrint & WorkflowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RealBudget - BluePrint & WorkflowUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3237AC2604FE9C00F2AC53 /* RealBudget___BluePrint___WorkflowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealBudget___BluePrint___WorkflowUITests.swift"; sourceTree = "<group>"; };
 		BD3237AE2604FE9C00F2AC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD3237D62605327F00F2AC53 /* FinancialResourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialResourse.swift; sourceTree = "<group>"; };
+		BD3237DC260532C200F2AC53 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		BD3237E1260533C000F2AC53 /* PredictionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionEngine.swift; sourceTree = "<group>"; };
+		BD3237E6260533E000F2AC53 /* FinancialState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialState.swift; sourceTree = "<group>"; };
+		BD3237EB260533FB00F2AC53 /* FinancialEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialEvent.swift; sourceTree = "<group>"; };
+		BD3237F02605342200F2AC53 /* Frequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
+		BD3237F62605391700F2AC53 /* FinancialState.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinancialState.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD3237CD26051E9700F2AC53 /* BlueprintUICommonControls in Frameworks */,
+				BD3237C526051E4000F2AC53 /* WorkflowUI in Frameworks */,
+				BD3237CF26051E9700F2AC53 /* BlueprintUI in Frameworks */,
+				BD3237C726051E4000F2AC53 /* Workflow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +117,13 @@
 		BD3237892604FE9A00F2AC53 /* RealBudget - BluePrint & Workflow */ = {
 			isa = PBXGroup;
 			children = (
+				BD3237DB2605329400F2AC53 /* FinancialResource */,
 				BD32378A2604FE9A00F2AC53 /* AppDelegate.swift */,
-				BD32378C2604FE9A00F2AC53 /* SceneDelegate.swift */,
-				BD32378E2604FE9A00F2AC53 /* ViewController.swift */,
-				BD3237902604FE9A00F2AC53 /* Main.storyboard */,
+				BD32378E2604FE9A00F2AC53 /* CurrentStateViewController.swift */,
 				BD3237932604FE9C00F2AC53 /* Assets.xcassets */,
 				BD3237952604FE9C00F2AC53 /* LaunchScreen.storyboard */,
 				BD3237982604FE9C00F2AC53 /* Info.plist */,
+				BD3237F52605391700F2AC53 /* FinancialState.xcdatamodeld */,
 			);
 			path = "RealBudget - BluePrint & Workflow";
 			sourceTree = "<group>";
@@ -128,6 +146,19 @@
 			path = "RealBudget - BluePrint & WorkflowUITests";
 			sourceTree = "<group>";
 		};
+		BD3237DB2605329400F2AC53 /* FinancialResource */ = {
+			isa = PBXGroup;
+			children = (
+				BD3237D62605327F00F2AC53 /* FinancialResourse.swift */,
+				BD3237DC260532C200F2AC53 /* Forecast.swift */,
+				BD3237E1260533C000F2AC53 /* PredictionEngine.swift */,
+				BD3237E6260533E000F2AC53 /* FinancialState.swift */,
+				BD3237EB260533FB00F2AC53 /* FinancialEvent.swift */,
+				BD3237F02605342200F2AC53 /* Frequency.swift */,
+			);
+			path = FinancialResource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +175,12 @@
 			dependencies = (
 			);
 			name = "RealBudget - BluePrint & Workflow";
+			packageProductDependencies = (
+				BD3237C426051E4000F2AC53 /* WorkflowUI */,
+				BD3237C626051E4000F2AC53 /* Workflow */,
+				BD3237CC26051E9700F2AC53 /* BlueprintUICommonControls */,
+				BD3237CE26051E9700F2AC53 /* BlueprintUI */,
+			);
 			productName = "RealBudget - BluePrint & Workflow";
 			productReference = BD3237872604FE9A00F2AC53 /* RealBudget - BluePrint & Workflow.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +252,10 @@
 				Base,
 			);
 			mainGroup = BD32377E2604FE9A00F2AC53;
+			packageReferences = (
+				BD3237C326051E4000F2AC53 /* XCRemoteSwiftPackageReference "workflow-swift" */,
+				BD3237CB26051E9700F2AC53 /* XCRemoteSwiftPackageReference "Blueprint" */,
+			);
 			productRefGroup = BD3237882604FE9A00F2AC53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +274,6 @@
 			files = (
 				BD3237972604FE9C00F2AC53 /* LaunchScreen.storyboard in Resources */,
 				BD3237942604FE9C00F2AC53 /* Assets.xcassets in Resources */,
-				BD3237922604FE9A00F2AC53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +298,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD32378F2604FE9A00F2AC53 /* ViewController.swift in Sources */,
+				BD32378F2604FE9A00F2AC53 /* CurrentStateViewController.swift in Sources */,
+				BD3237E7260533E000F2AC53 /* FinancialState.swift in Sources */,
 				BD32378B2604FE9A00F2AC53 /* AppDelegate.swift in Sources */,
-				BD32378D2604FE9A00F2AC53 /* SceneDelegate.swift in Sources */,
+				BD3237E2260533C000F2AC53 /* PredictionEngine.swift in Sources */,
+				BD3237F12605342200F2AC53 /* Frequency.swift in Sources */,
+				BD3237D72605327F00F2AC53 /* FinancialResourse.swift in Sources */,
+				BD3237EC260533FB00F2AC53 /* FinancialEvent.swift in Sources */,
+				BD3237DD260532C200F2AC53 /* Forecast.swift in Sources */,
+				BD3237F72605391700F2AC53 /* FinancialState.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +342,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BD3237902604FE9A00F2AC53 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD3237912604FE9A00F2AC53 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD3237952604FE9C00F2AC53 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Taniguchi.RealBudget---BluePrint---Workflow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Taniguchi.RealBudget---BluePrint---Workflow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -593,6 +631,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD3237C326051E4000F2AC53 /* XCRemoteSwiftPackageReference "workflow-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:square/workflow-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.28.1;
+			};
+		};
+		BD3237CB26051E9700F2AC53 /* XCRemoteSwiftPackageReference "Blueprint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:square/Blueprint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.22.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD3237C426051E4000F2AC53 /* WorkflowUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD3237C326051E4000F2AC53 /* XCRemoteSwiftPackageReference "workflow-swift" */;
+			productName = WorkflowUI;
+		};
+		BD3237C626051E4000F2AC53 /* Workflow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD3237C326051E4000F2AC53 /* XCRemoteSwiftPackageReference "workflow-swift" */;
+			productName = Workflow;
+		};
+		BD3237CC26051E9700F2AC53 /* BlueprintUICommonControls */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD3237CB26051E9700F2AC53 /* XCRemoteSwiftPackageReference "Blueprint" */;
+			productName = BlueprintUICommonControls;
+		};
+		BD3237CE26051E9700F2AC53 /* BlueprintUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD3237CB26051E9700F2AC53 /* XCRemoteSwiftPackageReference "Blueprint" */;
+			productName = BlueprintUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		BD3237F52605391700F2AC53 /* FinancialState.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD3237F62605391700F2AC53 /* FinancialState.xcdatamodel */,
+			);
+			currentVersion = BD3237F62605391700F2AC53 /* FinancialState.xcdatamodel */;
+			path = FinancialState.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BD32377F2604FE9A00F2AC53 /* Project object */;
 }
