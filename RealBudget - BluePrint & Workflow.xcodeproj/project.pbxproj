@@ -24,6 +24,11 @@
 		BD3237EC260533FB00F2AC53 /* FinancialEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3237EB260533FB00F2AC53 /* FinancialEvent.swift */; };
 		BD3237F12605342200F2AC53 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3237F02605342200F2AC53 /* Frequency.swift */; };
 		BD3237F72605391700F2AC53 /* FinancialState.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD3237F52605391700F2AC53 /* FinancialState.xcdatamodeld */; };
+		BD3238002605B82E00F2AC53 /* BankBalanceUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3237FF2605B82E00F2AC53 /* BankBalanceUpdate.swift */; };
+		BD3238052605B85B00F2AC53 /* LongRangeViewStateUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3238042605B85B00F2AC53 /* LongRangeViewStateUpdate.swift */; };
+		BD32380A2605B96000F2AC53 /* FinancialEventUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3238092605B96000F2AC53 /* FinancialEventUpdate.swift */; };
+		BD32380F2606A6A400F2AC53 /* RBDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32380E2606A6A400F2AC53 /* RBDateFormatter.swift */; };
+		BD3238142606A8AF00F2AC53 /* CenterlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3238132606A8AF00F2AC53 /* CenterlineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		BD3237EB260533FB00F2AC53 /* FinancialEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialEvent.swift; sourceTree = "<group>"; };
 		BD3237F02605342200F2AC53 /* Frequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
 		BD3237F62605391700F2AC53 /* FinancialState.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FinancialState.xcdatamodel; sourceTree = "<group>"; };
+		BD3237FF2605B82E00F2AC53 /* BankBalanceUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankBalanceUpdate.swift; sourceTree = "<group>"; };
+		BD3238042605B85B00F2AC53 /* LongRangeViewStateUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongRangeViewStateUpdate.swift; sourceTree = "<group>"; };
+		BD3238092605B96000F2AC53 /* FinancialEventUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialEventUpdate.swift; sourceTree = "<group>"; };
+		BD32380E2606A6A400F2AC53 /* RBDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBDateFormatter.swift; sourceTree = "<group>"; };
+		BD3238132606A8AF00F2AC53 /* CenterlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterlineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,13 +127,15 @@
 		BD3237892604FE9A00F2AC53 /* RealBudget - BluePrint & Workflow */ = {
 			isa = PBXGroup;
 			children = (
+				BD3238182606DCDD00F2AC53 /* LongRange */,
+				BD3237FE2605B81D00F2AC53 /* Workflows */,
 				BD3237DB2605329400F2AC53 /* FinancialResource */,
 				BD32378A2604FE9A00F2AC53 /* AppDelegate.swift */,
-				BD32378E2604FE9A00F2AC53 /* CurrentStateViewController.swift */,
 				BD3237932604FE9C00F2AC53 /* Assets.xcassets */,
 				BD3237952604FE9C00F2AC53 /* LaunchScreen.storyboard */,
 				BD3237982604FE9C00F2AC53 /* Info.plist */,
 				BD3237F52605391700F2AC53 /* FinancialState.xcdatamodeld */,
+				BD32380E2606A6A400F2AC53 /* RBDateFormatter.swift */,
 			);
 			path = "RealBudget - BluePrint & Workflow";
 			sourceTree = "<group>";
@@ -157,6 +169,25 @@
 				BD3237F02605342200F2AC53 /* Frequency.swift */,
 			);
 			path = FinancialResource;
+			sourceTree = "<group>";
+		};
+		BD3237FE2605B81D00F2AC53 /* Workflows */ = {
+			isa = PBXGroup;
+			children = (
+				BD3238042605B85B00F2AC53 /* LongRangeViewStateUpdate.swift */,
+				BD3237FF2605B82E00F2AC53 /* BankBalanceUpdate.swift */,
+				BD3238092605B96000F2AC53 /* FinancialEventUpdate.swift */,
+			);
+			path = Workflows;
+			sourceTree = "<group>";
+		};
+		BD3238182606DCDD00F2AC53 /* LongRange */ = {
+			isa = PBXGroup;
+			children = (
+				BD32378E2604FE9A00F2AC53 /* CurrentStateViewController.swift */,
+				BD3238132606A8AF00F2AC53 /* CenterlineView.swift */,
+			);
+			path = LongRange;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,14 +330,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD32378F2604FE9A00F2AC53 /* CurrentStateViewController.swift in Sources */,
+				BD3238052605B85B00F2AC53 /* LongRangeViewStateUpdate.swift in Sources */,
 				BD3237E7260533E000F2AC53 /* FinancialState.swift in Sources */,
 				BD32378B2604FE9A00F2AC53 /* AppDelegate.swift in Sources */,
+				BD3238002605B82E00F2AC53 /* BankBalanceUpdate.swift in Sources */,
 				BD3237E2260533C000F2AC53 /* PredictionEngine.swift in Sources */,
 				BD3237F12605342200F2AC53 /* Frequency.swift in Sources */,
 				BD3237D72605327F00F2AC53 /* FinancialResourse.swift in Sources */,
+				BD32380F2606A6A400F2AC53 /* RBDateFormatter.swift in Sources */,
 				BD3237EC260533FB00F2AC53 /* FinancialEvent.swift in Sources */,
 				BD3237DD260532C200F2AC53 /* Forecast.swift in Sources */,
+				BD3238142606A8AF00F2AC53 /* CenterlineView.swift in Sources */,
 				BD3237F72605391700F2AC53 /* FinancialState.xcdatamodeld in Sources */,
+				BD32380A2605B96000F2AC53 /* FinancialEventUpdate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
