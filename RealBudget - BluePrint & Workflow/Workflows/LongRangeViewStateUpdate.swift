@@ -5,6 +5,7 @@
 //  Created by Kevin Taniguchi on 3/19/21.
 //
 
+import CoreData
 import Foundation
 import SwiftUI
 import Workflow
@@ -35,14 +36,14 @@ struct LongRangeViewStateUpdate: Workflow {
         return FinancialResource.forecast(state: state, events: events)
     }
     
-    init() {}
+    init(moc: NSManagedObjectContext) {}
 
     func makeInitialState() -> [Forecast] {
-        []
+        data
     }
     
     func workflowDidChange(from previousWorkflow: LongRangeViewStateUpdate, state: inout [Forecast]) {
-        
+        print("11111111111")
     }
     
     func render(state: [Forecast], context: RenderContext<LongRangeViewStateUpdate>) -> LongRangeScreen {

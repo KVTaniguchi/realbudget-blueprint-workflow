@@ -5,6 +5,7 @@
 //  Created by Kevin Taniguchi on 3/19/21.
 //
 
+import CoreData
 import UIKit
 import Workflow
 import WorkflowUI
@@ -17,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        let containerViewController = ContainerViewController<LongRangeViewStateUpdate.Output, LongRangeScreen>(workflow: LongRangeViewStateUpdate())
+        let containerViewController = ContainerViewController<LongRangeViewStateUpdate.Output, LongRangeScreen>(workflow: LongRangeViewStateUpdate(moc: persistentContainer.viewContext))
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = containerViewController
@@ -25,13 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "FinancialState")
+        container.loadPersistentStores { description, error in
+            if let error = error {
+                fatalError("Unable to load persistent stores: \(error)")
+            }
+        }
+        return container
+    }()
 }
-
-///// Drives view controllers from a root Workflow.
-//public final class ContainerViewController<Output, ScreenType>: UIViewController where ScreenType: Screen {
-//
-//    /// Emits output events from the bound workflow.
-//    public let output: Signal<Output, Never>
-//
-//    public convenience init<W: Workflow>(workflow: W) where W.Rendering == ScreenType, W.Output == Output
-//}

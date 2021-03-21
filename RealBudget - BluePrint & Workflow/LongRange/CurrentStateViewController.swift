@@ -32,12 +32,6 @@ class LongRangeViewController: ScreenViewController<LongRangeScreen> {
     required init(screen: LongRangeScreen, environment: ViewEnvironment) {
         super.init(screen: screen, environment: environment)
     }
-//      required init(screen: DemoScreen, environment: ViewEnvironment) {
-//            button = UIButton()
-//            super.init(screen: screen, environment: environment)
-//
-//            update(screen: screen)
-//        }
     
     let rootElement = Row { row in
         
@@ -46,20 +40,17 @@ class LongRangeViewController: ScreenViewController<LongRangeScreen> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .red
+    }
+    
+    private func update(screen: LongRangeScreen) {
         
     }
     
     override func screenDidChange(from previousScreen: LongRangeScreen, previousEnvironment: ViewEnvironment) {
-        
+        print("screen did change \(previousScreen.forecasts)")
     }
 }
-
-//Spacer()
-//Text("\(RBDateFormatter.shared.formatter.string(from: forecast.date))")
-//CenterLineEyeView(isCurrentWeek: forecast.isCurrentWeek)
-//.alignmentGuide(.centerLine) { d in d[VerticalAlignment.center] }
-//Text("\(forecast.balance)")
-//Spacer()
 
 struct LongRangeItemElement: ProxyElement {
     var forecast: Forecast
