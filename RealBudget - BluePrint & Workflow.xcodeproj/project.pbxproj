@@ -29,6 +29,11 @@
 		BD32380A2605B96000F2AC53 /* FinancialEventUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3238092605B96000F2AC53 /* FinancialEventUpdate.swift */; };
 		BD32380F2606A6A400F2AC53 /* RBDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD32380E2606A6A400F2AC53 /* RBDateFormatter.swift */; };
 		BD3238142606A8AF00F2AC53 /* CenterlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3238132606A8AF00F2AC53 /* CenterlineView.swift */; };
+		BD85BB29260840E7001420E8 /* LongRangeListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85BB28260840E7001420E8 /* LongRangeListElement.swift */; };
+		BD85BB2E26084C3A001420E8 /* LongRangeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85BB2D26084C3A001420E8 /* LongRangeScreen.swift */; };
+		BD85BB3526119281001420E8 /* LongRangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85BB3426119281001420E8 /* LongRangeViewController.swift */; };
+		BD85BB3D2611937C001420E8 /* CurrentStateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85BB3C2611937C001420E8 /* CurrentStateScreen.swift */; };
+		BD85BB4226119404001420E8 /* CurrentStateListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85BB4126119404001420E8 /* CurrentStateListElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,11 @@
 		BD3238092605B96000F2AC53 /* FinancialEventUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialEventUpdate.swift; sourceTree = "<group>"; };
 		BD32380E2606A6A400F2AC53 /* RBDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBDateFormatter.swift; sourceTree = "<group>"; };
 		BD3238132606A8AF00F2AC53 /* CenterlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterlineView.swift; sourceTree = "<group>"; };
+		BD85BB28260840E7001420E8 /* LongRangeListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongRangeListElement.swift; sourceTree = "<group>"; };
+		BD85BB2D26084C3A001420E8 /* LongRangeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongRangeScreen.swift; sourceTree = "<group>"; };
+		BD85BB3426119281001420E8 /* LongRangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongRangeViewController.swift; sourceTree = "<group>"; };
+		BD85BB3C2611937C001420E8 /* CurrentStateScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateScreen.swift; sourceTree = "<group>"; };
+		BD85BB4126119404001420E8 /* CurrentStateListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentStateListElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,8 @@
 		BD3237892604FE9A00F2AC53 /* RealBudget - BluePrint & Workflow */ = {
 			isa = PBXGroup;
 			children = (
+				BD85BB332611925D001420E8 /* EventDetailView */,
+				BD85BB3226119252001420E8 /* CurrentStateView */,
 				BD3238182606DCDD00F2AC53 /* LongRange */,
 				BD3237FE2605B81D00F2AC53 /* Workflows */,
 				BD3237DB2605329400F2AC53 /* FinancialResource */,
@@ -184,10 +196,29 @@
 		BD3238182606DCDD00F2AC53 /* LongRange */ = {
 			isa = PBXGroup;
 			children = (
-				BD32378E2604FE9A00F2AC53 /* CurrentStateViewController.swift */,
 				BD3238132606A8AF00F2AC53 /* CenterlineView.swift */,
+				BD85BB28260840E7001420E8 /* LongRangeListElement.swift */,
+				BD85BB2D26084C3A001420E8 /* LongRangeScreen.swift */,
+				BD85BB3426119281001420E8 /* LongRangeViewController.swift */,
 			);
 			path = LongRange;
+			sourceTree = "<group>";
+		};
+		BD85BB3226119252001420E8 /* CurrentStateView */ = {
+			isa = PBXGroup;
+			children = (
+				BD32378E2604FE9A00F2AC53 /* CurrentStateViewController.swift */,
+				BD85BB3C2611937C001420E8 /* CurrentStateScreen.swift */,
+				BD85BB4126119404001420E8 /* CurrentStateListElement.swift */,
+			);
+			path = CurrentStateView;
+			sourceTree = "<group>";
+		};
+		BD85BB332611925D001420E8 /* EventDetailView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EventDetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,7 +363,9 @@
 				BD32378F2604FE9A00F2AC53 /* CurrentStateViewController.swift in Sources */,
 				BD3238052605B85B00F2AC53 /* LongRangeViewStateUpdate.swift in Sources */,
 				BD3237E7260533E000F2AC53 /* FinancialState.swift in Sources */,
+				BD85BB3526119281001420E8 /* LongRangeViewController.swift in Sources */,
 				BD32378B2604FE9A00F2AC53 /* AppDelegate.swift in Sources */,
+				BD85BB29260840E7001420E8 /* LongRangeListElement.swift in Sources */,
 				BD3238002605B82E00F2AC53 /* BankBalanceUpdate.swift in Sources */,
 				BD3237E2260533C000F2AC53 /* PredictionEngine.swift in Sources */,
 				BD3237F12605342200F2AC53 /* Frequency.swift in Sources */,
@@ -341,6 +374,9 @@
 				BD3237EC260533FB00F2AC53 /* FinancialEvent.swift in Sources */,
 				BD3237DD260532C200F2AC53 /* Forecast.swift in Sources */,
 				BD3238142606A8AF00F2AC53 /* CenterlineView.swift in Sources */,
+				BD85BB2E26084C3A001420E8 /* LongRangeScreen.swift in Sources */,
+				BD85BB4226119404001420E8 /* CurrentStateListElement.swift in Sources */,
+				BD85BB3D2611937C001420E8 /* CurrentStateScreen.swift in Sources */,
 				BD3237F72605391700F2AC53 /* FinancialState.xcdatamodeld in Sources */,
 				BD32380A2605B96000F2AC53 /* FinancialEventUpdate.swift in Sources */,
 			);

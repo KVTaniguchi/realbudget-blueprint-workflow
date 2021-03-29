@@ -12,4 +12,3 @@ struct FinancialState {
     var actualBalance: Int
     var events: [FinancialEvent]
 }
-

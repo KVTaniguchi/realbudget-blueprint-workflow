@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        let containerViewController = ContainerViewController<LongRangeViewStateUpdate.Output, LongRangeScreen>(workflow: LongRangeViewStateUpdate(moc: persistentContainer.viewContext))
+        let containerViewController = ContainerViewController<LongRangeViewStateUpdate.Output, LongRangeScreen>(
+            workflow: LongRangeViewStateUpdate(moc: persistentContainer.viewContext)
+        )
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = containerViewController
